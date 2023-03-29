@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="main.js" rel="stylesheet">
+  <link href="pastacss/index.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <div class="topo">
+    <p>Api selecionar cor</p>
+    <button id="start-button">Selecionar uma cor</button> <span id="result"></span>
+  </div>
+
+  <div class="video">
+    <p>Api de video</p>
+    <video id="video1" controls width="250">
+      <source src="/media/cc0-videos/flower.webm" type="video/webm">
+
+      <source src="/video.mp4" type="video/mp4">
+
+      Download the
+      <a href="/media/cc0-videos/flower.webm">WEBM</a>
+      or
+      <a href="/media/cc0-videos/flower.mp4">MP4</a>
+      video.
+    </video>
+  </div>
+
+  <div class="fundo">
+    
+    <p> Api The audio element</p>
+
+    <audio controls preload="metadata">
+      <source src="/mp3musica.mp3" type="" />
+      <source src="audio/audio.ogg" type="audio/ogg" />
+      <p>Não suportado</p>
+    </audio>
+
+  </div>
+
+  <div class="cont">
+   
+    <p>api  the Media capture </p>
+    <p>Camera:</p>
+    <input type="file" accept="image/*" capture />
+
+    <p>Video:</p>
+    <input id="input-video" type="file" accept="video/*" capture />
+
+    <img class="hidden">
+    <video id="video2" class="hidden" autoplay controls loop></video>
+
+    
+
+
+  </div>
+ 
+
+  <div class="escolha">
+  <p> Api Input types</p>
+  
+  <div id="inputs">
+      
+      <div><label for="date">Date: </label><input type="date" /></div>
+      <div><label for="week">Week: </label><input type="week" /></div>
+      <div><label for="month">Month: </label><input type="month" /></div>
+      <div><label for="time">Time: </label><input type="time" /></div>
+      <div><label for="color">Colour: </label><input type="color" /></div>
+      <div><label for="number">Number: </label><input type="number" /></div>
+  
+    </div>
+
+    <div class="not">
+      <p>Notification API</p>
+     
+  
+      <input id="input-notify" class="aa" type="text" value="aaaaa">
+      <button id="notify" class="not">Show notification</button>
+  
+      <script type="module" src="./main.js"></script>
+  
+      
+    </div>
+
+    
+</body>
+
+</html>
